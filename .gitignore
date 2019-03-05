@@ -27,3 +27,4 @@ pom.xml
 /nb-build
 .pydevproject
 */.DS_Store
+/logs
