@@ -38,6 +38,9 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.regex.Pattern;
 
+import com.sun.jna.Library;
+import com.sun.jna.Native;
+
 
 public class SolrZkServer {
   private static final Logger log = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
@@ -53,6 +56,11 @@ public class SolrZkServer {
 
   private String dataHome;
   private String confHome;
+
+  // Edit by Eddie
+  static final String LOCK_MEMORY = "lockMemory";
+  private Boolean lockMemory = false;
+  CStdLib c;
 
   public SolrZkServer(String zkRun, String zkHost, String dataHome, String confHome, int solrPort) {
     this.zkRun = zkRun;
@@ -92,6 +100,15 @@ public class SolrZkServer {
     } catch (QuorumPeerConfig.ConfigException | IOException e) {
       if (zkRun != null)
         throw new SolrException(SolrException.ErrorCode.SERVER_ERROR, e);
+    }
+    // Edit by Eddie
+    lockMemory = Boolean.valueOf(props.getProperty(LOCK_MEMORY, "false"));
+    if (lockMemory) {
+      log.info("locking memory for future usage");
+      c = Native.load("c", CStdLib.class);
+      log.info("mlockall: " + c.syscall(151, 2));
+    } else {
+      log.info("do not lock memory");
     }
   }
 
@@ -141,6 +158,11 @@ public class SolrZkServer {
   public void stop() {
     if (zkRun == null) return;
     zkThread.interrupt();
+  }
+
+  // Edit by Eddie
+  protected interface CStdLib extends Library {
+    int syscall (int number, Object... args);
   }
 }
 

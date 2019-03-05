@@ -156,6 +156,8 @@
     <dependency org="com.google.protobuf" name="protobuf-java" rev="${/com.google.protobuf/protobuf-java}" conf="compile"/>
 
     <dependency org="org.rrd4j" name="rrd4j" rev="${/org.rrd4j/rrd4j}" conf="compile"/>
+    <dependency org="net.java.dev.jna" name="jna" rev="5.2.0"/>
+    <dependency org="net.java.dev.jna" name="jna-platform" rev="5.2.0"/>
 
     <exclude org="*" ext="*" matcher="regexp" type="${ivy.exclude.types}"/> 
   </dependencies>
