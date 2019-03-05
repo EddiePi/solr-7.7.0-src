@@ -100,7 +100,7 @@ SOLR_HOST="numa-04"
 
 # Changes the logging level. Valid values: ALL, TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF. Default is INFO
 # This is an alternative to changing the rootLogger in log4j2.xml
-#SOLR_LOG_LEVEL=INFO
+#SOLR_LOG_LEVEL=TRACE
 
 # Location where Solr should write logs to. Absolute or relative to solr start dir
 SOLR_LOGS_DIR=/home/epi/solr-7.7.0-src/solr/logs

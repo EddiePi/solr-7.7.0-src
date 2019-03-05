@@ -1,0 +1,101 @@
+2019-03-04 21:17:42.614 INFO  (main) [   ] o.e.j.u.log Logging initialized @501ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-03-04 21:17:42.721 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-03-04 21:17:42.725 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_201-b09
+2019-03-04 21:17:42.742 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/epi/solr-7.7.0-src/solr/server/contexts/] at interval 0
+2019-03-04 21:17:42.873 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-03-04 21:17:42.879 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-03-04 21:17:42.879 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-03-04 21:17:42.880 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2019-03-04 21:17:42.922 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2019-03-04 21:17:42.941 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-03-04 21:17:42.944 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.7.0-SNAPSHOT unknown - epi - 2019-03-04 14:13:09
+2019-03-04 21:17:42.944 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
+2019-03-04 21:17:42.944 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/epi/solr-7.7.0-src/solr
+2019-03-04 21:17:42.944 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-03-04T21:17:42.944Z
+2019-03-04 21:17:42.958 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/epi/solr-7.7.0-src/solr/server/solr
+2019-03-04 21:17:42.962 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/epi/solr-7.7.0-src/solr/server/solr/solr.xml
+2019-03-04 21:17:43.010 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1445d7f, but no JMX reporters were configured - adding default JMX reporter.
+2019-03-04 21:17:43.253 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-03-04 21:17:43.414 INFO  (main) [   ] o.a.s.c.SolrZkServerProps Reading configuration from: /home/epi/solr-7.7.0-src/solr/server/solr/zoo.cfg
+2019-03-04 21:17:43.415 INFO  (main) [   ] o.a.s.c.SolrZkServer STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9983
+2019-03-04 21:17:43.916 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
+2019-03-04 21:17:44.006 INFO  (zkConnectionManagerCallback-4-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2019-03-04 21:17:44.590 INFO  (main) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader numa-04:8983_solr
+2019-03-04 21:17:44.594 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=72121042153177088-numa-04:8983_solr-n_0000000000) starting
+2019-03-04 21:17:44.670 INFO  (zkConnectionManagerCallback-11-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2019-03-04 21:17:44.674 INFO  (main) [   ] o.a.s.c.s.i.ZkClientClusterStateProvider Cluster at localhost:9983 ready
+2019-03-04 21:17:44.707 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/numa-04:8983_solr
+2019-03-04 21:17:44.712 INFO  (OverseerStateUpdate-72121042153177088-numa-04:8983_solr-n_0000000000) [   ] o.a.s.c.Overseer Starting to work on the main queue : numa-04:8983_solr
+2019-03-04 21:17:44.719 INFO  (OverseerStateUpdate-72121042153177088-numa-04:8983_solr-n_0000000000) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2019-03-04 21:17:44.719 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2019-03-04 21:17:44.791 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-03-04 21:17:44.830 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1445d7f
+2019-03-04 21:17:44.830 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1445d7f
+2019-03-04 21:17:44.834 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1445d7f
+2019-03-04 21:17:44.852 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /home/epi/solr-7.7.0-src/solr/server/solr
+2019-03-04 21:17:44.882 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@394df057{/solr,file:///home/epi/solr-7.7.0-src/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/epi/solr-7.7.0-src/solr/server/solr-webapp/webapp}
+2019-03-04 21:17:44.912 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@464649c{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-03-04 21:17:44.912 INFO  (main) [   ] o.e.j.s.Server Started @2800ms
+2019-03-04 21:17:54.388 INFO  (qtp407697359-95) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-03-04 21:17:54.390 INFO  (qtp407697359-95) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1551734274207} status=0 QTime=35
+2019-03-04 21:17:54.440 INFO  (qtp407697359-104) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=84
+2019-03-04 21:17:54.442 INFO  (qtp407697359-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=86
+2019-03-04 21:17:54.491 INFO  (qtp407697359-104) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1551734274209 and sendToOCPQueue=true
+2019-03-04 21:17:54.492 INFO  (qtp407697359-104) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1551734274209} status=0 QTime=1
+2019-03-04 21:18:00.699 INFO  (qtp407697359-104) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1551734274207} status=0 QTime=0
+2019-03-04 21:18:00.700 INFO  (qtp407697359-103) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1551734274207} status=0 QTime=0
+2019-03-04 21:18:00.715 INFO  (qtp407697359-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=15
+2019-03-04 21:18:00.732 INFO  (qtp407697359-33) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1551734274209 and sendToOCPQueue=true
+2019-03-04 21:18:00.733 INFO  (qtp407697359-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1551734274209} status=0 QTime=0
+2019-03-04 21:18:02.321 INFO  (qtp407697359-33) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json&_=1551734274209 and sendToOCPQueue=true
+2019-03-04 21:18:02.321 INFO  (qtp407697359-104) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1551734274207} status=0 QTime=0
+2019-03-04 21:18:02.328 INFO  (qtp407697359-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1551734274209} status=0 QTime=6
+2019-03-04 21:18:02.340 INFO  (qtp407697359-97) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=18
+2019-03-04 21:18:02.353 INFO  (qtp407697359-94) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/configs/&detail=false&wt=json&_=1551734282255} status=0 QTime=32
+2019-03-04 21:18:02.365 INFO  (qtp407697359-95) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1551734274209 and sendToOCPQueue=true
+2019-03-04 21:18:02.366 INFO  (qtp407697359-95) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1551734274209} status=0 QTime=0
+2019-03-04 21:18:04.202 INFO  (qtp407697359-94) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1551734274207} status=0 QTime=0
+2019-03-04 21:18:04.205 INFO  (qtp407697359-99) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1551734274207} status=0 QTime=0
+2019-03-04 21:18:04.219 INFO  (qtp407697359-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=14
+2019-03-04 21:18:04.231 INFO  (qtp407697359-95) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1551734274209 and sendToOCPQueue=true
+2019-03-04 21:18:04.231 INFO  (qtp407697359-95) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1551734274209} status=0 QTime=0
+2019-03-04 21:18:05.898 INFO  (qtp407697359-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1551734274207} status=0 QTime=0
+2019-03-04 21:18:05.898 INFO  (qtp407697359-97) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json&_=1551734274209 and sendToOCPQueue=true
+2019-03-04 21:18:05.900 INFO  (qtp407697359-97) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1551734274209} status=0 QTime=1
+2019-03-04 21:18:05.912 INFO  (qtp407697359-94) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=13
+2019-03-04 21:18:05.918 INFO  (qtp407697359-101) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/configs/&detail=false&wt=json&_=1551734282255} status=0 QTime=19
+2019-03-04 21:18:05.926 INFO  (qtp407697359-95) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1551734274209 and sendToOCPQueue=true
+2019-03-04 21:18:05.926 INFO  (qtp407697359-95) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1551734274209} status=0 QTime=0
+2019-03-04 21:18:07.004 INFO  (qtp407697359-101) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1551734274207} status=0 QTime=0
+2019-03-04 21:18:07.004 INFO  (qtp407697359-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1551734274207} status=0 QTime=0
+2019-03-04 21:18:07.018 INFO  (qtp407697359-99) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=14
+2019-03-04 21:18:07.049 INFO  (qtp407697359-95) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1551734274209 and sendToOCPQueue=true
+2019-03-04 21:18:07.050 INFO  (qtp407697359-95) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1551734274209} status=0 QTime=0
+2019-03-04 21:18:23.771 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@464649c{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-03-04 21:18:23.771 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-03-04 21:18:23.776 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=613784740
+2019-03-04 21:18:23.776 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/numa-04:8983_solr
+2019-03-04 21:18:23.781 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Publish this node as DOWN...
+2019-03-04 21:18:23.781 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=numa-04:8983_solr as DOWN
+2019-03-04 21:18:23.788 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-03-04 21:18:23.789 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1623134f: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@41bff893
+2019-03-04 21:18:23.796 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-03-04 21:18:23.796 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@21aa6d6c: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@49938e0b
+2019-03-04 21:18:23.798 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-03-04 21:18:23.798 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@b968a76: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@12e0c9f3
+2019-03-04 21:18:23.799 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster, tag=null
+2019-03-04 21:18:23.807 INFO  (closeThreadPool-14-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72121042153177088-numa-04:8983_solr-n_0000000000) closing
+2019-03-04 21:18:23.808 INFO  (OverseerStateUpdate-72121042153177088-numa-04:8983_solr-n_0000000000) [   ] o.a.s.c.Overseer Overseer Loop exiting : numa-04:8983_solr
+2019-03-04 21:18:23.808 INFO  (OverseerAutoScalingTriggerThread-72121042153177088-numa-04:8983_solr-n_0000000000) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
+2019-03-04 21:18:23.810 INFO  (closeThreadPool-14-thread-2) [   ] o.a.s.c.Overseer Overseer (id=72121042153177088-numa-04:8983_solr-n_0000000000) closing
+2019-03-04 21:18:23.810 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72121042153177088-numa-04:8983_solr-n_0000000000) closing
+2019-03-04 21:18:23.813 WARN  (NIOServerCxn.Factory:0.0.0.0/0.0.0.0:9983) [   ] o.a.z.s.NIOServerCnxn Unable to read additional data from client sessionid 0x10039b4aa5f0001, likely client has closed socket
+2019-03-04 21:18:23.816 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@394df057{/solr,null,UNAVAILABLE}{/home/epi/solr-7.7.0-src/solr/server/solr-webapp/webapp}
+2019-03-04 21:18:23.812 WARN  (Thread-13) [   ] o.a.z.s.ZooKeeperServerMain Server interrupted
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:998) ~[?:1.8.0_201]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304) ~[?:1.8.0_201]
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231) ~[?:1.8.0_201]
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:125) [zookeeper-3.4.13.jar:3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03]
+	at org.apache.solr.cloud.SolrZkServer$1.run(SolrZkServer.java:116) [solr-core-7.7.0-SNAPSHOT.jar:7.7.0-SNAPSHOT unknown - epi - 2019-03-04 14:13:09]
+2019-03-04 21:18:23.817 INFO  (Thread-13) [   ] o.a.s.c.SolrZkServer ZooKeeper Server exited.
