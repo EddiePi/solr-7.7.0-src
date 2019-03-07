@@ -28,3 +28,4 @@ pom.xml
 .pydevproject
 */.DS_Store
 /logs
+*.log.*
