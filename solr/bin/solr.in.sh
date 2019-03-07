@@ -51,7 +51,7 @@ GC_LOG_OPTS="-verbose:gc -XX:+PrintHeapAtGC -XX:+PrintGCDetails \
 # Set the ZooKeeper connection string if using an external ZooKeeper ensemble
 # e.g. host1:2181,host2:2181/chroot
 # Leave empty if not using SolrCloud
-#ZK_HOST=""
+ZK_HOST="numa-03:2181"
 
 # Set the ZooKeeper client timeout (for SolrCloud mode)
 #ZK_CLIENT_TIMEOUT="15000"
@@ -96,7 +96,7 @@ SOLR_HOST="numa-04"
 # Solr provides a default Log4J configuration xml file in server/resources
 # however, you may want to customize the log settings and file appender location
 # so you can point the script to use a different log4j2.xml file
-#LOG4J_PROPS=/var/solr/log4j2.xml
+LOG4J_PROPS=/home/epi/solr-7.7.0-src/solr/server/resources/log4j2.xml
 
 # Changes the logging level. Valid values: ALL, TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF. Default is INFO
 # This is an alternative to changing the rootLogger in log4j2.xml

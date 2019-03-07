@@ -1,101 +1,117 @@
-2019-03-04 21:17:42.614 INFO  (main) [   ] o.e.j.u.log Logging initialized @501ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-03-04 21:17:42.721 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2019-03-04 21:17:42.725 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_201-b09
-2019-03-04 21:17:42.742 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/epi/solr-7.7.0-src/solr/server/contexts/] at interval 0
-2019-03-04 21:17:42.873 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-03-04 21:17:42.879 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-03-04 21:17:42.879 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-03-04 21:17:42.880 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2019-03-04 21:17:42.922 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
-2019-03-04 21:17:42.941 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-03-04 21:17:42.944 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.7.0-SNAPSHOT unknown - epi - 2019-03-04 14:13:09
-2019-03-04 21:17:42.944 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
-2019-03-04 21:17:42.944 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/epi/solr-7.7.0-src/solr
-2019-03-04 21:17:42.944 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-03-04T21:17:42.944Z
-2019-03-04 21:17:42.958 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/epi/solr-7.7.0-src/solr/server/solr
-2019-03-04 21:17:42.962 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/epi/solr-7.7.0-src/solr/server/solr/solr.xml
-2019-03-04 21:17:43.010 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1445d7f, but no JMX reporters were configured - adding default JMX reporter.
-2019-03-04 21:17:43.253 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2019-03-04 21:17:43.414 INFO  (main) [   ] o.a.s.c.SolrZkServerProps Reading configuration from: /home/epi/solr-7.7.0-src/solr/server/solr/zoo.cfg
-2019-03-04 21:17:43.415 INFO  (main) [   ] o.a.s.c.SolrZkServer STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9983
-2019-03-04 21:17:43.916 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
-2019-03-04 21:17:44.006 INFO  (zkConnectionManagerCallback-4-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
-2019-03-04 21:17:44.590 INFO  (main) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader numa-04:8983_solr
-2019-03-04 21:17:44.594 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=72121042153177088-numa-04:8983_solr-n_0000000000) starting
-2019-03-04 21:17:44.670 INFO  (zkConnectionManagerCallback-11-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
-2019-03-04 21:17:44.674 INFO  (main) [   ] o.a.s.c.s.i.ZkClientClusterStateProvider Cluster at localhost:9983 ready
-2019-03-04 21:17:44.707 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/numa-04:8983_solr
-2019-03-04 21:17:44.712 INFO  (OverseerStateUpdate-72121042153177088-numa-04:8983_solr-n_0000000000) [   ] o.a.s.c.Overseer Starting to work on the main queue : numa-04:8983_solr
-2019-03-04 21:17:44.719 INFO  (OverseerStateUpdate-72121042153177088-numa-04:8983_solr-n_0000000000) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
-2019-03-04 21:17:44.719 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
-2019-03-04 21:17:44.791 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2019-03-04 21:17:44.830 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1445d7f
-2019-03-04 21:17:44.830 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1445d7f
-2019-03-04 21:17:44.834 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1445d7f
-2019-03-04 21:17:44.852 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /home/epi/solr-7.7.0-src/solr/server/solr
-2019-03-04 21:17:44.882 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@394df057{/solr,file:///home/epi/solr-7.7.0-src/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/epi/solr-7.7.0-src/solr/server/solr-webapp/webapp}
-2019-03-04 21:17:44.912 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@464649c{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2019-03-04 21:17:44.912 INFO  (main) [   ] o.e.j.s.Server Started @2800ms
-2019-03-04 21:17:54.388 INFO  (qtp407697359-95) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2019-03-04 21:17:54.390 INFO  (qtp407697359-95) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1551734274207} status=0 QTime=35
-2019-03-04 21:17:54.440 INFO  (qtp407697359-104) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=84
-2019-03-04 21:17:54.442 INFO  (qtp407697359-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=86
-2019-03-04 21:17:54.491 INFO  (qtp407697359-104) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1551734274209 and sendToOCPQueue=true
-2019-03-04 21:17:54.492 INFO  (qtp407697359-104) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1551734274209} status=0 QTime=1
-2019-03-04 21:18:00.699 INFO  (qtp407697359-104) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1551734274207} status=0 QTime=0
-2019-03-04 21:18:00.700 INFO  (qtp407697359-103) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1551734274207} status=0 QTime=0
-2019-03-04 21:18:00.715 INFO  (qtp407697359-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=15
-2019-03-04 21:18:00.732 INFO  (qtp407697359-33) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1551734274209 and sendToOCPQueue=true
-2019-03-04 21:18:00.733 INFO  (qtp407697359-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1551734274209} status=0 QTime=0
-2019-03-04 21:18:02.321 INFO  (qtp407697359-33) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json&_=1551734274209 and sendToOCPQueue=true
-2019-03-04 21:18:02.321 INFO  (qtp407697359-104) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1551734274207} status=0 QTime=0
-2019-03-04 21:18:02.328 INFO  (qtp407697359-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1551734274209} status=0 QTime=6
-2019-03-04 21:18:02.340 INFO  (qtp407697359-97) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=18
-2019-03-04 21:18:02.353 INFO  (qtp407697359-94) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/configs/&detail=false&wt=json&_=1551734282255} status=0 QTime=32
-2019-03-04 21:18:02.365 INFO  (qtp407697359-95) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1551734274209 and sendToOCPQueue=true
-2019-03-04 21:18:02.366 INFO  (qtp407697359-95) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1551734274209} status=0 QTime=0
-2019-03-04 21:18:04.202 INFO  (qtp407697359-94) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1551734274207} status=0 QTime=0
-2019-03-04 21:18:04.205 INFO  (qtp407697359-99) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1551734274207} status=0 QTime=0
-2019-03-04 21:18:04.219 INFO  (qtp407697359-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=14
-2019-03-04 21:18:04.231 INFO  (qtp407697359-95) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1551734274209 and sendToOCPQueue=true
-2019-03-04 21:18:04.231 INFO  (qtp407697359-95) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1551734274209} status=0 QTime=0
-2019-03-04 21:18:05.898 INFO  (qtp407697359-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1551734274207} status=0 QTime=0
-2019-03-04 21:18:05.898 INFO  (qtp407697359-97) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json&_=1551734274209 and sendToOCPQueue=true
-2019-03-04 21:18:05.900 INFO  (qtp407697359-97) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1551734274209} status=0 QTime=1
-2019-03-04 21:18:05.912 INFO  (qtp407697359-94) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=13
-2019-03-04 21:18:05.918 INFO  (qtp407697359-101) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/configs/&detail=false&wt=json&_=1551734282255} status=0 QTime=19
-2019-03-04 21:18:05.926 INFO  (qtp407697359-95) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1551734274209 and sendToOCPQueue=true
-2019-03-04 21:18:05.926 INFO  (qtp407697359-95) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1551734274209} status=0 QTime=0
-2019-03-04 21:18:07.004 INFO  (qtp407697359-101) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1551734274207} status=0 QTime=0
-2019-03-04 21:18:07.004 INFO  (qtp407697359-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1551734274207} status=0 QTime=0
-2019-03-04 21:18:07.018 INFO  (qtp407697359-99) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1551734274209} status=0 QTime=14
-2019-03-04 21:18:07.049 INFO  (qtp407697359-95) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1551734274209 and sendToOCPQueue=true
-2019-03-04 21:18:07.050 INFO  (qtp407697359-95) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1551734274209} status=0 QTime=0
-2019-03-04 21:18:23.771 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@464649c{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2019-03-04 21:18:23.771 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2019-03-04 21:18:23.776 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=613784740
-2019-03-04 21:18:23.776 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/numa-04:8983_solr
-2019-03-04 21:18:23.781 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Publish this node as DOWN...
-2019-03-04 21:18:23.781 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=numa-04:8983_solr as DOWN
-2019-03-04 21:18:23.788 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2019-03-04 21:18:23.789 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1623134f: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@41bff893
-2019-03-04 21:18:23.796 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2019-03-04 21:18:23.796 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@21aa6d6c: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@49938e0b
-2019-03-04 21:18:23.798 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2019-03-04 21:18:23.798 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@b968a76: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@12e0c9f3
-2019-03-04 21:18:23.799 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster, tag=null
-2019-03-04 21:18:23.807 INFO  (closeThreadPool-14-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72121042153177088-numa-04:8983_solr-n_0000000000) closing
-2019-03-04 21:18:23.808 INFO  (OverseerStateUpdate-72121042153177088-numa-04:8983_solr-n_0000000000) [   ] o.a.s.c.Overseer Overseer Loop exiting : numa-04:8983_solr
-2019-03-04 21:18:23.808 INFO  (OverseerAutoScalingTriggerThread-72121042153177088-numa-04:8983_solr-n_0000000000) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
-2019-03-04 21:18:23.810 INFO  (closeThreadPool-14-thread-2) [   ] o.a.s.c.Overseer Overseer (id=72121042153177088-numa-04:8983_solr-n_0000000000) closing
-2019-03-04 21:18:23.810 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72121042153177088-numa-04:8983_solr-n_0000000000) closing
-2019-03-04 21:18:23.813 WARN  (NIOServerCxn.Factory:0.0.0.0/0.0.0.0:9983) [   ] o.a.z.s.NIOServerCnxn Unable to read additional data from client sessionid 0x10039b4aa5f0001, likely client has closed socket
-2019-03-04 21:18:23.816 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@394df057{/solr,null,UNAVAILABLE}{/home/epi/solr-7.7.0-src/solr/server/solr-webapp/webapp}
-2019-03-04 21:18:23.812 WARN  (Thread-13) [   ] o.a.z.s.ZooKeeperServerMain Server interrupted
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:998) ~[?:1.8.0_201]
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304) ~[?:1.8.0_201]
-	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231) ~[?:1.8.0_201]
-	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:125) [zookeeper-3.4.13.jar:3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03]
-	at org.apache.solr.cloud.SolrZkServer$1.run(SolrZkServer.java:116) [solr-core-7.7.0-SNAPSHOT.jar:7.7.0-SNAPSHOT unknown - epi - 2019-03-04 14:13:09]
-2019-03-04 21:18:23.817 INFO  (Thread-13) [   ] o.a.s.c.SolrZkServer ZooKeeper Server exited.
+2019-03-07 17:35:28.706 INFO  (main) [   ] org.eclipse.jetty.util.log.Log Logging initialized @414ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-03-07 17:35:28.805 WARN  (main) [   ] org.eclipse.jetty.server.ServerConnector Ignoring deprecated socket close linger time
+2019-03-07 17:35:28.808 INFO  (main) [   ] org.eclipse.jetty.server.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_201-b09
+2019-03-07 17:35:28.824 INFO  (main) [   ] org.eclipse.jetty.deploy.providers.ScanningAppProvider Deployment monitor [file:///home/epi/solr-7.7.0-src/solr/server/contexts/] at interval 0
+2019-03-07 17:35:28.945 INFO  (main) [   ] org.eclipse.jetty.webapp.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-03-07 17:35:28.966 INFO  (main) [   ] org.eclipse.jetty.server.session.DefaultSessionIdManager DefaultSessionIdManager workerName=node0
+2019-03-07 17:35:28.966 INFO  (main) [   ] org.eclipse.jetty.server.session.DefaultSessionIdManager No SessionScavenger set, using defaults
+2019-03-07 17:35:28.968 INFO  (main) [   ] org.eclipse.jetty.server.session.HouseKeeper node0 Scavenging every 600000ms
+2019-03-07 17:35:28.991 INFO  (main) [   ] org.apache.solr.util.configuration.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2019-03-07 17:35:29.009 INFO  (main) [   ] org.apache.solr.servlet.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-03-07 17:35:29.012 INFO  (main) [   ] org.apache.solr.servlet.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.7.0-SNAPSHOT unknown - epi - 2019-03-04 14:13:09
+2019-03-07 17:35:29.014 INFO  (main) [   ] org.apache.solr.servlet.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
+2019-03-07 17:35:29.014 INFO  (main) [   ] org.apache.solr.servlet.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/epi/solr-7.7.0-src/solr
+2019-03-07 17:35:29.015 INFO  (main) [   ] org.apache.solr.servlet.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-03-07T17:35:29.014Z
+2019-03-07 17:35:29.028 INFO  (main) [   ] org.apache.solr.core.SolrResourceLoader Using system property solr.solr.home: /home/epi/solr-7.7.0-src/solr/ycsb_data/node1/solr/
+2019-03-07 17:35:29.078 INFO  (zkConnectionManagerCallback-2-thread-1) [   ] org.apache.solr.common.cloud.ConnectionManager zkClient has connected
+2019-03-07 17:35:29.086 INFO  (main) [   ] org.apache.solr.servlet.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+2019-03-07 17:35:29.089 INFO  (main) [   ] org.apache.solr.core.SolrXmlConfig Loading container configuration from /home/epi/solr-7.7.0-src/solr/ycsb_data/node1/solr/solr.xml
+2019-03-07 17:35:29.091 ERROR (main) [   ] org.apache.solr.servlet.SolrDispatchFilter Could not start Solr. Check solr/home property and the logs
+2019-03-07 17:35:29.113 ERROR (main) [   ] org.apache.solr.common.SolrException null:org.apache.solr.common.SolrException: solr.xml does not exist in /home/epi/solr-7.7.0-src/solr/ycsb_data/node1/solr cannot start Solr
+	at org.apache.solr.core.SolrXmlConfig.fromFile(SolrXmlConfig.java:118)
+	at org.apache.solr.core.SolrXmlConfig.fromSolrHome(SolrXmlConfig.java:150)
+	at org.apache.solr.servlet.SolrDispatchFilter.loadNodeConfig(SolrDispatchFilter.java:285)
+	at org.apache.solr.servlet.SolrDispatchFilter.createCoreContainer(SolrDispatchFilter.java:251)
+	at org.apache.solr.servlet.SolrDispatchFilter.init(SolrDispatchFilter.java:173)
+	at org.eclipse.jetty.servlet.FilterHolder.initialize(FilterHolder.java:136)
+	at org.eclipse.jetty.servlet.ServletHandler.lambda$initialize$0(ServletHandler.java:750)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:744)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:368)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1497)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1459)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:852)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:278)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:545)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.deploy.bindings.StandardStarter.processBinding(StandardStarter.java:46)
+	at org.eclipse.jetty.deploy.AppLifeCycle.runBindings(AppLifeCycle.java:192)
+	at org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(DeploymentManager.java:505)
+	at org.eclipse.jetty.deploy.DeploymentManager.addApp(DeploymentManager.java:151)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(ScanningAppProvider.java:180)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider.fileAdded(WebAppProvider.java:453)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(ScanningAppProvider.java:64)
+	at org.eclipse.jetty.util.Scanner.reportAddition(Scanner.java:610)
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:529)
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:392)
+	at org.eclipse.jetty.util.Scanner.doStart(Scanner.java:313)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart(ScanningAppProvider.java:150)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(DeploymentManager.java:579)
+	at org.eclipse.jetty.deploy.DeploymentManager.doStart(DeploymentManager.java:240)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:138)
+	at org.eclipse.jetty.server.Server.start(Server.java:415)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:382)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1572)
+	at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1512)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1511)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:220)
+	at org.eclipse.jetty.start.Main.start(Main.java:490)
+	at org.eclipse.jetty.start.Main.main(Main.java:77)
+
+2019-03-07 17:35:29.123 INFO  (main) [   ] org.eclipse.jetty.server.handler.ContextHandler Started o.e.j.w.WebAppContext@4961f6af{/solr,file:///home/epi/solr-7.7.0-src/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/epi/solr-7.7.0-src/solr/server/solr-webapp/webapp}
+2019-03-07 17:35:29.140 INFO  (main) [   ] org.eclipse.jetty.server.AbstractConnector Started ServerConnector@56dc1551{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-03-07 17:35:29.140 INFO  (main) [   ] org.eclipse.jetty.server.Server Started @850ms
+2019-03-07 17:37:55.501 ERROR (qtp802600647-70) [   ] org.apache.solr.servlet.SolrDispatchFilter Error processing the request. CoreContainer is either not initialized or shutting down.
+2019-03-07 17:37:55.503 WARN  (qtp802600647-70) [   ] org.eclipse.jetty.server.HttpChannel /solr/admin/info/system
+javax.servlet.ServletException: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335) ~[jetty-rewrite-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.Server.handle(Server.java:502) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364) [jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260) [jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305) [jetty-io-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) [jetty-io-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118) [jetty-io-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765) [jetty-util-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683) [jetty-util-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+Caused by: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:359) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602) ~[jetty-servlet-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540) ~[jetty-servlet-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) ~[jetty-security-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480) ~[jetty-servlet-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126) ~[jetty-server-9.4.14.v20181114.jar:9.4.14.v20181114]
+	... 12 more
+2019-03-07 17:48:27.944 INFO  (Thread-1) [   ] org.eclipse.jetty.server.AbstractConnector Stopped ServerConnector@56dc1551{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-03-07 17:48:27.945 INFO  (Thread-1) [   ] org.eclipse.jetty.server.session.HouseKeeper node0 Stopped scavenging
+2019-03-07 17:48:27.948 INFO  (Thread-1) [   ] org.eclipse.jetty.server.handler.ContextHandler Stopped o.e.j.w.WebAppContext@4961f6af{/solr,null,UNAVAILABLE}{/home/epi/solr-7.7.0-src/solr/server/solr-webapp/webapp}

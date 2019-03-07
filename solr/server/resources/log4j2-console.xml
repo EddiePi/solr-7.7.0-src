@@ -23,7 +23,7 @@
     <Console name="STDERR" target="SYSTEM_ERR">
       <PatternLayout>
         <Pattern>
-          %-5p - %d{yyyy-MM-dd HH:mm:ss.SSS}; %c; %m%n
+          %-5p - %d{yyyy-MM-dd HH:mm:ss.SSS}; %C; %m%n
         </Pattern>
       </PatternLayout>
     </Console>

@@ -22,15 +22,17 @@
     <Console name="STDOUT" target="SYSTEM_OUT">
       <PatternLayout>
         <Pattern>
-          %d{yyyy-MM-dd HH:mm:ss.SSS} %-5p (%t) [%X{collection} %X{shard} %X{replica} %X{core}] %c{1.} %m%n
+          %d{yyyy-MM-dd HH:mm:ss.SSS} %-5p (%t) [%X{collection} %X{shard} %X{replica} %X{core}] %C %m%n
         </Pattern>
       </PatternLayout>
     </Console>
 
     <RollingFile
         name="RollingFile"
-        fileName="${sys:solr.log.dir}/solr.log"
-        filePattern="${sys:solr.log.dir}/solr.log.%i" >
+	fileName="/home/epi/solr-7.7.0-src/solr/logs/solr.log"
+        filePattern="/home/epi/solr-7.7.0-src/solr/logs/solr.log.%i" >
+	<!--fileName="${sys:solr.log.dir}/solr.log"
+	filePattern="${sys:solr.log.dir}/solr.log.%i" > -->
       <PatternLayout>
         <Pattern>
           %d{yyyy-MM-dd HH:mm:ss.SSS} %-5p (%t) [%X{collection} %X{shard} %X{replica} %X{core}] %C %m%n
@@ -45,11 +47,13 @@
 
     <RollingFile
         name="SlowFile"
-        fileName="${sys:solr.log.dir}/solr_slow_requests.log"
-        filePattern="${sys:solr.log.dir}/solr_slow_requests.log.%i" >
+        fileName="/home/epi/solr-7.7.0-src/solr/logs/solr_slow_requests.log"
+        filePattern="/home/epi/solr-7.7.0-src/solr/logs/solr_slow_requests.log.%i" >
+	<!--fileName="${sys:solr.log.dir}/solr_slow_requests.log"
+	filePattern="${sys:solr.log.dir}/solr_slow_requests.log.%i" > -->
       <PatternLayout>
         <Pattern>
-          %d{yyyy-MM-dd HH:mm:ss.SSS} %-5p (%t) [%X{collection} %X{shard} %X{replica} %X{core}] %c{1.} %m%n
+          %d{yyyy-MM-dd HH:mm:ss.SSS} %-5p (%t) [%X{collection} %X{shard} %X{replica} %X{core}] %C %m%n
         </Pattern>
       </PatternLayout>
       <Policies>
