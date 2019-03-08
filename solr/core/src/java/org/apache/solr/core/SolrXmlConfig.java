@@ -277,6 +277,7 @@ public class SolrXmlConfig {
           break;
         case "lockMemory":
           builder.setLockMemory(Boolean.parseBoolean(value));
+          break;
         default:
           throw new SolrException(SolrException.ErrorCode.SERVER_ERROR, "Unknown configuration value in solr.xml: " + name);
       }
