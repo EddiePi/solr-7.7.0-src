@@ -129,6 +129,10 @@ import org.slf4j.LoggerFactory;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
 
+// Edit by Eddie
+import com.sun.jna.Library;
+import com.sun.jna.Native;
+
 /**
  *
  * @since solr 1.3
@@ -222,6 +226,10 @@ public class CoreContainer {
   protected volatile AutoScalingHandler autoScalingHandler;
 
   private enum CoreInitFailedAction { fromleader, none }
+
+  // Edit by Eddie
+  private Boolean lockMemory = false;
+  CStdLib c;
 
   /**
    * This method instantiates a new instance of {@linkplain BackupRepository}.
@@ -321,6 +329,21 @@ public class CoreContainer {
         ExecutorUtil.newMDCAwareCachedThreadPool(
             cfg.getReplayUpdatesThreads(),
             new DefaultSolrThreadFactory("replayUpdatesExecutor")));
+    // Edit by Eddie
+    lockMemory = cfg.getLockMemory();
+    if (lockMemory) {
+      log.info("locking memory for future usage");
+      c = Native.load("c", CStdLib.class);
+      log.info("mlockall: " + c.syscall(151, 2));
+    } else {
+      log.info("do not lock memory");
+    }
+  }
+
+
+  // Edit by Eddie
+  protected interface CStdLib extends Library {
+    int syscall (int number, Object... args);
   }
 
   private synchronized void initializeAuthorizationPlugin(Map<String, Object> authorizationConf) {
