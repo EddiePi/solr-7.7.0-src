@@ -27,6 +27,7 @@
 -->
 
 <solr>
+	<bool name="lockMemory">${lockMemory:true}</bool>
 
   <solrcloud>
 
